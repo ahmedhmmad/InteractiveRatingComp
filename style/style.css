@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +15,7 @@ body {
   font-size: 1.2rem;
 }
 .card {
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   padding: 1em;
   width: 80%;
 
@@ -27,8 +29,9 @@ body {
   transform: translate(0, -50%);
 }
 h2 {
-  font-size: 1em;
+  font-size: 1.4em;
   color: #fff;
+  margin-top: 1em;
 }
 .rating {
   width: 100%;
@@ -52,14 +55,50 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover,
+#five:hover {
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+}
+#one:active,
+#two:active,
+#three:active,
+#four:active,
+#five:active {
+  background-color: #fc7613;
+  color: #fff;
+  cursor: pointer;
+}
 button {
+  font-weight: 400;
   width: 80%;
   background-color: #fc7613;
   padding: 6px 80px;
   border-radius: 100px;
   border: none;
-  margin: auto;
+  margin: 2em auto;
+  color: #fff;
+}
+button:hover {
+  background-color: #fff;
+  color: #fc7613;
+  cursor: pointer;
 }
 p {
   padding: 2em 0;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 30%;
+  }
+  button {
+    padding: 16px;
+  }
 }
