@@ -8,7 +8,7 @@
 body {
   background-color: #040405;
   display: flex;
-  /* flex-direction: column; */
+    flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
@@ -101,4 +101,11 @@ p {
   button {
     padding: 16px;
   }
+}
+#thank-img {
+  display: none;
+}
+.thank-img-active {
+  display: flex;
+  justify-content: center;
 }
