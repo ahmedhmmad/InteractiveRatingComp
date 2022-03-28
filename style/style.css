@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #040405;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+.card {
+  border-radius: 0.2em;
+  padding: 1em;
+  width: 80%;
+
+  background-color: #1e252f;
+  color: #6c737c;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+h2 {
+  font-size: 1em;
+  color: #fff;
+}
+.rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #262f38;
+  color: #6c737c;
+}
+#one,
+#two,
+#three,
+#four,
+#five,
+#star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 80%;
+  background-color: #fc7613;
+  padding: 6px 80px;
+  border-radius: 100px;
+  border: none;
+  margin: auto;
+}
+p {
+  padding: 2em 0;
+}
